@@ -1,1 +1,149 @@
-<h1>Hello, I'm Knockout!</h1>
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Knockout</title>
+
+    <meta name="description" content="Knockout">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta charset="UTF-8">
+
+    <!-- Favicon -->
+    <!-- <link type="image/x-icon" href="./img/favicon.ico" rel="shortcut icon"> -->
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js"></script>
+    <link type="text/css" href="./css/styles.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Title Page -->
+    <div id="title" class="page title">
+        <div>
+            <div class="title-row title-stars">
+                <i class="far fa-star fa-3x"></i>
+                <i class="far fa-star fa-3x"></i>
+                <i class="far fa-star fa-3x"></i>
+                <i class="far fa-star fa-3x"></i>
+                <i class="far fa-star fa-3x"></i>
+                <i class="far fa-star fa-3x"></i>
+                <i class="far fa-star fa-3x"></i>
+            </div>
+            <div class="title-row title-intro">
+                <i class="far fa-star fa-2x"></i>
+                <h1>Are you ready?!?</h1>
+                <i class="far fa-star fa-2x"></i>
+            </div>
+            <div>
+                <button id="title-one-player" type="button" class="btn btn-primary">One Player</button>
+                <button id="title-two-player" type="button" class="btn btn-primary">Two Player</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- One Player Options Screen -->
+    <div id="options" class="page options">
+        <div>
+            <div class="title-row title-stars">
+                <i class="far fa-star fa-2x"></i>
+                <i class="far fa-star fa-2x"></i>
+                <i class="far fa-star fa-2x"></i>
+                <i class="far fa-star fa-2x"></i>
+                <i class="far fa-star fa-2x"></i>
+                <i class="far fa-star fa-2x"></i>
+                <i class="far fa-star fa-2x"></i>
+            </div>
+            <div class="title-row title-intro">
+                <i class="far fa-star fa-2x"></i>
+                <h1>Options</h1>
+                <i class="far fa-star fa-2x"></i>
+            </div>
+
+            <div>
+
+                <form>
+
+                    <div class="input-field col s12">
+                        <select multiple>
+                            <option value="" disabled selected>Choose your option</option>
+                            <option value="words-kindergarten">Kindergarten Sight Words</option>
+                            <option value="words-first-grade">First Grade Sight Words</option>
+                            <option value="words-second-grade">Second Grade Sight Words</option>
+                            <option value="math-addition">Addition</option>
+                            <option value="math-subtraction">Subtraction</option>
+                        </select>
+                        <label>Player 1 Question Types</label>
+                    </div>
+                </form>
+
+            </div>
+
+            <div>
+                <button id="one-player-begin-btn" type="button" class="btn btn-primary">Begin Game</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- One Player Options Screen -->
+    <div id="game" class="page options">
+        <div>
+            <div class="title-row title-stars">
+                <i class="far fa-star fa-2x"></i>
+                <i class="far fa-star fa-2x"></i>
+                <i class="far fa-star fa-2x"></i>
+                <i class="far fa-star fa-2x"></i>
+                <i class="far fa-star fa-2x"></i>
+                <i class="far fa-star fa-2x"></i>
+                <i class="far fa-star fa-2x"></i>
+            </div>
+            <div class="title-row title-intro">
+                <i class="far fa-star fa-2x"></i>
+                <h1 id="a">Game</h1>
+                <i class="far fa-star fa-2x"></i>
+            </div>
+        </div>
+    </div>
+
+    <!-- One Player Options Screen -->
+    <div id="summary" class="page options">
+        <div>
+            <div class="title-row title-stars">
+                <i class="far fa-star fa-2x"></i>
+                <i class="far fa-star fa-2x"></i>
+                <i class="far fa-star fa-2x"></i>
+                <i class="far fa-star fa-2x"></i>
+                <i class="far fa-star fa-2x"></i>
+                <i class="far fa-star fa-2x"></i>
+                <i class="far fa-star fa-2x"></i>
+            </div>
+            <div class="title-row title-intro">
+                <i class="far fa-star fa-2x"></i>
+                <h1 id="total-time"></h1>
+                <i class="far fa-star fa-2x"></i>
+            </div>
+        </div>
+    </div>
+
+    <!-- Vendor Libraries -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.5/lodash.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.1/moment.min.js"></script>
+
+    <!-- Modules -->
+    <script src="./src/game.js"></script>
+    <script src="./src/options.js"></script>
+    <script src="./src/summary.js"></script>
+    <script src="./src/title.js"></script>
+    <script src="./src/wordlists.js"></script>
+
+    <!-- Application -->
+    <script src="./src/app.js"></script>
+
+</body>
+
+</html>
